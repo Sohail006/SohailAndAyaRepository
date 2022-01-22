@@ -1,0 +1,233 @@
+/*start global rules*/
+* { box-sizing : border-box;
+    -webkit-box-sizing : border-box;
+     -moz-box-sizing : border-box;
+   }
+   html{
+     scroll-behavior: smooth;
+   }
+   ul{
+    list-style: none;
+   }
+   a{
+    text-decoration: none;
+   }
+   body{
+     font-family: 'Hina Mincho', serif;
+    
+   }
+   .container{
+       padding-left: 20px;
+       padding-right: 20px;
+       max-width: 100%;
+   }
+/*end global rules*/
+/*start components*/
+.specialheading{
+    border-bottom:1px solid #f1f1f1 ;
+    padding-bottom: 15px;
+}
+
+/*end components*/
+
+/*start navigation bar*/
+nav{
+    width: 100%;
+    height: 65px;
+    padding: 15px;
+    position: fixed;
+background-color: white;
+z-index: 1;
+box-shadow: 0px 2px 9px grey;
+}
+nav h2{
+    display: inline;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: normal;
+}
+nav div{
+    float: right;
+}
+
+nav a{
+    font-size: larger;
+    padding-right: 20px;
+    color: black;
+    letter-spacing: 4px;
+    font-weight: normal;
+    padding-left: 27px;
+}
+nav span{
+    font-weight: bolder;
+}
+nav a:hover,nav h2:hover{
+    background-color: lightgrey;
+}
+/*end navigation bar*/
+/*start navigation bar*/
+.landing{
+    background-image: url(../images/architect.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    top: -32px;
+}
+.landing h1{
+    position: absolute;
+    /* margin: 0; */
+    left: 38%;
+    font-size: 50px;
+    letter-spacing: 4;
+    top: 34%;
+    letter-spacing: 4px;
+    color: white;
+}
+
+@media (max-width:768px) {
+    .landing h1{
+        text-align: center;
+    left: 34px;
+}
+    }
+
+.landing span{
+    background-color: black;
+    opacity: 0.7;
+    display: inline-block;
+    font-size: 45px;
+    padding: 5px;
+}
+/*end navigation bar*/
+/*start project*/
+.projects{
+padding-top:50px;
+padding-bottom: 50px;
+}
+.projects h2{
+    border-bottom:1px solid #f1f1f1 ;
+padding-bottom: 15px;
+}
+.containerbox{
+    display: flex;
+    width: 100%;
+    margin-top: 15px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.imgbox{
+    width: calc(94% / 4);
+    position: relative;
+    
+}
+.projects img{
+    width: 100%;
+  
+   margin-right: 10px;
+}
+.projects p{
+    transform: translate(0px, 50px);
+    background-color: black;
+    color: white;
+    padding: 16px;
+    margin: 0;
+    width: fit-content;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+/*end project*/
+/*START ABOUT*/
+.about{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.about .peoplecontainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 10px;
+    max-width: 100%;
+}
+.about .box{
+    margin-top: 20px;
+}
+.about img{
+    width: 100%;
+    position: relative;
+    -webkit-filter: grayscale(50%); 
+    filter: grayscale(50%);
+}
+.about .box h1{
+    font-size: 25px;
+    margin-top: 10px;
+}
+.about .box h2{
+    font-size: 15px;
+    letter-spacing: 3;
+    color:#a7a3a3cb;
+ 
+}
+.about .box p{
+    font-size: 20px;
+}
+.about .box button{
+    width: 100%;
+    color: black;
+    background-color: a7a3a3cb;
+    padding: 12px;
+    border: 1px lightgray;
+}
+.about .box img::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color:a7a3a3cb ;
+}
+/*enD ABOUT*/
+/*START CONTACT*/
+.inputbox{
+    padding-top: 10px;
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    row-gap: 15px;
+    margin-bottom: 20px;
+    height: 250px;
+}
+.inputbox input{
+    padding: 15px;
+    border: 1px solid #a7a3a3cb;
+}
+.contacts button {
+    color: white;
+    background-color: black;
+    padding: 15px;
+    margin-top: 15px;
+    border: 1px black;
+}
+/*END CONTACT*/
+/*start footer*/
+.footer{
+    padding-top: 50px;
+}
+.footer .backgroundimg {
+    background-image: url(../images/map.jpg);
+    background-size: cover;
+    min-height: 100vh;
+}
+.footer .endtext{
+    background-color: black;
+    color: white;
+    padding: 30px;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+.footer a{
+    color: white;
+    text-decoration-line: underline;
+}
+.footer a:hover{
+    color: rgb(107, 221, 107);
+}
+/*end footer*/
